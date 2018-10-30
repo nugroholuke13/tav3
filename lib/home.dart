@@ -20,7 +20,7 @@ class FSHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(      
         appBar: topBar,
-        drawer: Drawer(
+        drawer: new Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
