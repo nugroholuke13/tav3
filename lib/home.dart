@@ -19,29 +19,45 @@ class FSHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(      
-        appBar: topBar,
+        appBar:  new AppBar(
+          backgroundColor: new Color(0xFF51f8dd),
+          centerTitle: true,
+          elevation: 1.0,
+          leading: new Icon(Icons.menu, color: Colors.black,),
+          title: SizedBox(
+              height: 35.0, child: Text('FS Community', style: new TextStyle(color: Colors.black),)),
+          actions: <Widget>[
+            Padding(
+              padding: const EdgeInsets.only(right: 12.0),
+              child: Icon(Icons.send, color: Colors.black,),
+            )
+          ],
+        ),
         drawer: new Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
+        child: new ListView(
           children: <Widget>[
-            DrawerHeader(
-              child: Text('Drawer'),
-              decoration: BoxDecoration(
-                color: Colors.blue,
+            new UserAccountsDrawerHeader(
+              accountName: new Text("Luke Nugroho"),
+              accountEmail: new Text("nugroholuke13@gmail.com"),
+              currentAccountPicture: new CircleAvatar(
+                backgroundColor: Colors.white,
+                child: new Text("L"),
               ),
             ),
-            ListTile(
-              title: Text('Item 1'),
-              onTap: (){
-                Navigator.pop(context);
-              },
+            new ListTile(
+              title: new Text("Page One"),
+              trailing: new Icon(Icons.arrow_upward),
             ),
-            ListTile(
-              title: Text('Item 2'),
-              onTap: (){
-                Navigator.pop(context);
-              },
+            new ListTile(
+              title: new Text("Page Two"),
+              trailing: new Icon(Icons.arrow_downward),
             ),
+            new Divider(),
+            new ListTile(
+              title: new Text("Close"),
+              trailing: new Icon(Icons.close),
+              onTap: () => Navigator.of(context).pop(),
+            )
           ],
         ),
       ),
