@@ -23,13 +23,13 @@ class FSHome extends StatelessWidget {
           backgroundColor: new Color(0xFF51f8dd),
           centerTitle: true,
           elevation: 1.0,
-          leading: new Icon(Icons.menu, color: Colors.black,),
+          iconTheme: new IconThemeData(color: Colors.black),
           title: SizedBox(
               height: 35.0, child: Text('FS Community', style: new TextStyle(color: Colors.black),)),
           actions: <Widget>[
             Padding(
               padding: const EdgeInsets.only(right: 12.0),
-              child: Icon(Icons.send, color: Colors.black,),
+              child: Icon(Icons.send,),
             )
           ],
         ),
