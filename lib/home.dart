@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class FSHome extends StatelessWidget {
   final topBar = new AppBar(
@@ -48,7 +49,7 @@ class FSHome extends StatelessWidget {
           ],
         ),
       ),
-        //body: new InstaBody(),
+        body: new homeBody(),
         bottomNavigationBar: new Container(          
           color: new Color(0xFFFFFFE0),
           height: 50.0,
@@ -93,5 +94,17 @@ class FSHome extends StatelessWidget {
             ),
           ),
         ));
+  }
+}
+
+class homeBody extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: <Widget>[
+        Flexible(child: new Text("Ini Body"))
+      ],
+    );
   }
 }
