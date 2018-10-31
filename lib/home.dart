@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class FSHome extends StatelessWidget {
   final topBar = new AppBar(
-    backgroundColor: new Color(0xFF51f8dd),
+    backgroundColor: new Color(0xFFFFFFE0),
     centerTitle: true,
     elevation: 1.0,
-    leading: new Icon(Icons.menu, color: Colors.black,),
+    iconTheme: new IconThemeData(color: Colors.black),
     title: SizedBox(
         height: 35.0, child: Text('FS Community', style: new TextStyle(color: Colors.black),)),
     actions: <Widget>[
@@ -19,20 +19,7 @@ class FSHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(      
-        appBar:  new AppBar(
-          backgroundColor: new Color(0xFF51f8dd),
-          centerTitle: true,
-          elevation: 1.0,
-          iconTheme: new IconThemeData(color: Colors.black),
-          title: SizedBox(
-              height: 35.0, child: Text('FS Community', style: new TextStyle(color: Colors.black),)),
-          actions: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(right: 12.0),
-              child: Icon(Icons.send,),
-            )
-          ],
-        ),
+        appBar:  topBar,
         drawer: new Drawer(
         child: new ListView(
           children: <Widget>[
@@ -63,11 +50,11 @@ class FSHome extends StatelessWidget {
       ),
         //body: new InstaBody(),
         bottomNavigationBar: new Container(          
-          color: new Color(0xFF51f8dd),
+          color: new Color(0xFFFFFFE0),
           height: 50.0,
           alignment: Alignment.center,
           child: new BottomAppBar(
-            color: Color(0xFF51f8dd),
+            color: Color(0xFFFFFFE0),
             child: new Row(
               // alignment: MainAxisAlignment.spaceAround,
               mainAxisAlignment: MainAxisAlignment.spaceAround,

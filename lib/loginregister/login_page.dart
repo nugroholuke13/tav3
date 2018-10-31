@@ -316,8 +316,9 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                       tileMode: TileMode.clamp),
                 ),
                 child: MaterialButton(
-                    highlightColor: Colors.transparent,
-                    splashColor: Theme.Colors.loginGradientEnd,
+                  color: Color(0xFFFF7A42),
+                    // highlightColor: Colors.transparent,
+                    // splashColor: Theme.Colors.loginGradientEnd,
                     //shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(5.0))),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
@@ -325,7 +326,7 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                       child: Text(
                         "LOGIN",
                         style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontSize: 25.0,
                             fontFamily: "WorkSansBold"),
                       ),
@@ -348,7 +349,7 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                   "Forgot Password?",
                   style: TextStyle(
                       decoration: TextDecoration.underline,
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 16.0,
                       fontFamily: "WorkSansMedium"),
                 )),
@@ -378,7 +379,7 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                   child: Text(
                     "Or",
                     style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.black,
                         fontSize: 16.0,
                         fontFamily: "WorkSansMedium"),
                   ),
@@ -412,11 +413,11 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                     padding: const EdgeInsets.all(15.0),
                     decoration: new BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Colors.white,
+                      color: Color(0xFFFF7A42),
                     ),
                     child: new Icon(
                       FontAwesomeIcons.facebookF,
-                      color: Color(0xFF0084ff),
+                      color: Color(0xFF000000),
                     ),
                   ),
                 ),
@@ -429,11 +430,11 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                     padding: const EdgeInsets.all(15.0),
                     decoration: new BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Colors.white,
+                      color: Color(0xFFFF7A42),
                     ),
                     child: new Icon(
                       FontAwesomeIcons.google,
-                      color: Color(0xFF0084ff),
+                      color: Color(0xFF000000),
                     ),
                   ),
                 ),
@@ -619,8 +620,9 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                       tileMode: TileMode.clamp),
                 ),
                 child: MaterialButton(
-                    highlightColor: Colors.transparent,
-                    splashColor: Theme.Colors.loginGradientEnd,
+                  color: Color(0xFFFF7A42),
+                    // highlightColor: Colors.transparent,
+                    // splashColor: Theme.Colors.loginGradientEnd,
                     //shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(5.0))),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
@@ -628,7 +630,7 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                       child: Text(
                         "SIGN UP",
                         style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontSize: 25.0,
                             fontFamily: "WorkSansBold"),
                       ),
