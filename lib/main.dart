@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tav3/loginregister/login_page.dart';
 import 'package:tav3/home.dart';
+import 'package:tav3/walkthrough/page_view.dart';
 
 void main() => runApp(new MyApp());
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new LoginPage(),
+      home: new AppTutorial(),
     );
   }
 }

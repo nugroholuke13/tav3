@@ -31,6 +31,9 @@ flutter:
   assets:
       - assets/login_logo.png
       - assets/FS_logo.png
+      - assets/First.png
+      - assets/Middle.png
+      - assets/Third.png
 
   fonts:
     - family: WorkSansSemiBold
