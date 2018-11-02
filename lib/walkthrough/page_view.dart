@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tav3/walkthrough/page_view_indicator.dart';
 import 'package:tav3/walkthrough/model.dart';
+import 'package:tav3/loginregister/login_page.dart';
 
 class AppTutorial extends StatelessWidget {
   @override
@@ -95,7 +96,9 @@ class _AppTutorialBodyState extends State<AppTutorialBody> {
               ),
               secondChild: FlatButton(
                 color: Colors.greenAccent,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()),);
+                },
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
                       vertical: 18.0, horizontal: 98.0),
